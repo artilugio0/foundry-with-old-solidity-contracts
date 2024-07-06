@@ -23,5 +23,5 @@ assembly {
 3. Define an interface to access the contract methods
 
 ## Examples
-- [MakerDAO - Vat](./test/Vat.t.sol)
-- [Ethernaut - AlienCodex](./test/AlienCodex.t.sol)
+- [Testing MakerDAO Vat wards](./test/Vat.t.sol) `pragma solidity ^0.6.12;`
+- [Testing exploit script for Ethernaut AlienCodex](./test/AlienCodex.t.sol) `pragma solidity ^0.5.0;`
