@@ -57,3 +57,8 @@ interface IContract {
 ## Examples
 - [Testing MakerDAO Vat wards](./test/Vat.t.sol) `pragma solidity ^0.6.12;`
 - [Testing exploit script for Ethernaut AlienCodex](./test/AlienCodex.t.sol) `pragma solidity ^0.5.0;`
+
+Run tests with:
+```bash
+forge test
+```
