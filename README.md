@@ -20,7 +20,7 @@ assembly {
 }
 ```
 
-3. Define an interface to access the contract methods
+3. Define an interface to access the contract methods and test. For example:
 ```solidity
 pragma solidity ^0.8.13;
 
