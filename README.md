@@ -16,7 +16,7 @@ bytes memory targetCode = vm.getCode("out/Contract.sol/Contract.json");
 address addr;
 
 assembly {
-    addr := create(0, add(targetCode, 32), targetCode)
+    addr := create(0, add(targetCode, 32), mload(targetCode))
 }
 ```
 
@@ -35,7 +35,7 @@ contract ContractTest is Test {
         address addr;
 
         assembly {
-            addr := create(0, add(targetCode, 32), targetCode)
+            addr := create(0, add(targetCode, 32), mload(targetCode))
         }
 
         target = IContract(addr);

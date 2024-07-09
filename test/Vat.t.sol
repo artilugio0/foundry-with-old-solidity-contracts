@@ -12,7 +12,7 @@ contract VatTest is Test {
         address addr;
 
         assembly {
-            addr := create(0, add(targetCode, 32), targetCode)
+            addr := create(0, add(targetCode, 32), mload(targetCode))
         }
 
         vat = IVat(addr);
